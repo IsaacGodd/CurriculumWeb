@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Experience from './pages/Experience';
@@ -25,6 +26,7 @@ function App() {
       <Layout>
         <AnimatedRoutes />
       </Layout>
+      <SpeedInsights />
     </Router>
   );
 }
